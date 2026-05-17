@@ -7,6 +7,8 @@ local scriptsDir = os.getenv("HOME") .. "/.dotfiles/scripts"
 -- Make scriptsDir available globally so sub-modules can use it
 _G.scriptsDir = scriptsDir
 
+require("themes.mocha")
+
 require("conf.monitor")
 require("conf.environment")
 require("conf.programs")

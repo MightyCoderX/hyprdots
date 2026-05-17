@@ -1,7 +1,5 @@
 -- conf/misc.lua
 
-require("themes.mocha")
-
 hl.config({
     misc = {
         vrr = 3,
