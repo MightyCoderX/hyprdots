@@ -1,6 +1,4 @@
 -- conf/misc.lua
--- NOTE: background_color references $mantle from your mocha theme.
--- Load your theme before this file, or set it directly as a hex value here.
 
 require("themes.mocha")
 
