@@ -183,7 +183,17 @@ hl.layer_rule({
 
 hl.layer_rule({ match = { namespace = "^(swaync-control-center)$" }, no_anim = true })
 
--- Workspace rules
-hl.workspace_rule({ workspace = "1",                  monitor = "HDMI-A-1" })
-hl.workspace_rule({ workspace = "2",                  monitor = "eDP-1" })
+---------------------
+-- Workspace rules --
+---------------------
+
+-- even workspaces on laptop monitor odd ones on external main monitor
+for i = 1,10 do
+    if i % 2 == 0 then
+        hl.workspace_rule({ workspace = tostring(i), monitor = "eDP-1" })
+    else
+        hl.workspace_rule({ workspace = tostring(i), monitor = "HDMI-A-1" })
+    end
+end
+
 hl.workspace_rule({ workspace = "special:scratchpad",  on_created_empty = terminal })
