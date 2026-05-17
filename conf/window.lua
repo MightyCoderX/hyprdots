@@ -1,7 +1,4 @@
 -- conf/window.lua
--- NOTE: col.active_border and col.inactive_border reference variables from your
--- mocha theme (blueAlphaaa, surface1Alphaaa). Make sure themes/mocha.lua sets
--- those as globals before this file is loaded.
 
 hl.config({
     general = {
