@@ -185,4 +185,5 @@ hl.layer_rule({ match = { namespace = "^(swaync-control-center)$" }, no_anim = t
 
 -- Workspace rules
 hl.workspace_rule({ workspace = "1",                  monitor = "HDMI-A-1" })
+hl.workspace_rule({ workspace = "2",                  monitor = "eDP-1" })
 hl.workspace_rule({ workspace = "special:scratchpad",  on_created_empty = terminal })
