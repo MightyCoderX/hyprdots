@@ -19,9 +19,6 @@ hl.on("hyprland.start", function()
     hl.exec_cmd('gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab false')
     hl.exec_cmd('gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system')
 
-    -- Switch to workspace 1 on start
-    hl.dispatch(hl.dsp.focus({ workspace = "1" }))
-
     -- Polkit agent
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
 
@@ -45,9 +42,6 @@ hl.on("hyprland.start", function()
 
     -- Input method
     hl.exec_cmd("fcitx5")
-
-    -- XWayland: set HDMI-A-1 as primary
-    hl.exec_cmd("xrandr --output HDMI-A-1 --primary")
 
     -- Keyboard layout (XWayland)
     hl.exec_cmd("setxkbmap it")
